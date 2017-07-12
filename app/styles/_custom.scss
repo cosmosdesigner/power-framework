@@ -128,7 +128,7 @@ $gray-lighter:              #EAEAEA !default;
 $gray-lightest:             #F7F7F7 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
+$brand-primary:             $red !default;
 $brand-success:             #00AF3F !default;
 $brand-info:                $teal !default;
 $brand-warning:             #FFBA00 !default;
@@ -162,6 +162,8 @@ $brand-inverse:             $gray-dark !default;
 .txt-black{color:$black;}
 .txt-white{color:$white !important;}
 .txt-info{color:$teal !important;}
+
+
 
 
 
@@ -238,7 +240,7 @@ $inverse-color: $gray-lighter !default;
 //
 // Style anchor elements.
 
-$link-color:            $red !default;
+$link-color:            $black !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
@@ -418,9 +420,9 @@ $btn-primary-color:              $white !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
-$btn-secondary-color:            $gray-dark !default;
-$btn-secondary-bg:               $white !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-color:            $white !default;
+$btn-secondary-bg:               $gray-dark !default;
+$btn-secondary-border:           $gray-dark !default;
 
 $btn-info-color:                 $white !default;
 $btn-info-bg:                    $brand-info !default;
@@ -830,7 +832,7 @@ $badge-padding-y:             .25em !default;
 $badge-pill-padding-x:        .6em !default;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
-$badge-pill-border-radius:    10rem !default;
+$badge-pill-border-radius:    3rem !default;
 
 
 // Modals
@@ -951,14 +953,14 @@ $figure-caption-color:     $gray-light !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-y:          .75rem !default;
-$breadcrumb-padding-x:          1rem !default;
-$breadcrumb-item-padding:       .5rem !default;
+$breadcrumb-padding-y:          0.5rem !default;
+$breadcrumb-padding-x:          0rem !default;
+$breadcrumb-item-padding:       1.5rem !default;
 
-$breadcrumb-bg:                 $gray-lighter !default;
-$breadcrumb-divider-color:      $gray-light !default;
-$breadcrumb-active-color:       $gray-light !default;
-$breadcrumb-divider:            "/" !default;
+$breadcrumb-bg:                 $white !default;
+$breadcrumb-divider-color:      $gray-dark !default;
+$breadcrumb-active-color:       $red !default;
+$breadcrumb-divider:            ">" !default;
 
 
 // Carousel
@@ -1109,3 +1111,32 @@ font-family: 'POWER_PREON';
   cursor: pointer;
 }
 .alert{border:none !important;border-radius: 0px !important;}
+.badge{
+    width: 2rem;
+    height: 2rem;
+    border-radius:2rem !important;
+    padding:10px !important;
+}
+.badge-notify{
+   position:relative;
+   top: -15px;
+   left: -20px;
+}
+.btn-primary.disabled, .btn-primary:disabled,.btn-secondary.disabled, .btn-secondary:disabled{
+    background-color: $gray-light !important;
+    color:$white !important;
+    border-color: $gray-light !important;
+    font-weight: 500;
+}
+.btn-outline-primary.disabled, .btn-outline-primary:disabled{
+      background-color: transparent!important;
+    color:$gray-light !important;
+    border-color: $gray-light !important;
+    font-weight: 500;
+}
+.full-image{
+    background:$white url('../images/1.jpg') no-repeat center center;
+    background-size: cover;
+    color:$white;
+    min-height: 150px;
+}
