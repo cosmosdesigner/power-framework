@@ -3,7 +3,8 @@
 <ol>
    <li>Abrir o <b>Terminal</b></li>
     <li>Digitar <code>git clone https://github.com/cosmosdesigner/power-framework.git</code></li>
-    <li>Instalar as dependências do projeto <code>npm install</code></li>
+    <li>Instalar as dependências do projeto do Bower <code>bower install</code></li>
+    <li>Instalar as dependências do projeto do NPM <code>npm install</code></li>
     <li>Correr o projeto <code>gulp serve</code><br/><small>se existir um erro de Environment de SASS, realizar <code>npm rebuil node-sass</code></small></li>
 </ol>
 
