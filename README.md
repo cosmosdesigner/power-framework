@@ -1,7 +1,9 @@
 # power-framework
 ## Uma framework com muita energia com base em BOOTSTRAP
+
 <ol>
    <li>Abrir o <b>Terminal</b></li>
+   <li><b>Verficar se tem o Gulp instalado através do comando <code>gulp -v</code></b>, se retornar <i>No command gulp found</i>, instalar o gulp <code>sudo npm install -g gulp</code></li>
     <li>Digitar <code>git clone https://github.com/cosmosdesigner/power-framework.git</code></li>
     <li>Instalar as dependências do projeto do Bower <code>bower install</code></li>
     <li>Instalar as dependências do projeto do NPM <code>npm install</code></li>
