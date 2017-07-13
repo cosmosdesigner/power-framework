@@ -465,11 +465,11 @@ $input-padding-x:                .75rem !default;
 $input-padding-y:                .5rem !default;
 $input-line-height:              1.25 !default;
 
-$input-bg:                       $gray-lightest !default;
+$input-bg:                       transparent !default;
 $input-bg-disabled:              $gray-lighter !default;
 
 $input-color:                    $white !default;
-$input-border-color:             $gray-lightest !default;
+$input-border-color:             transparent!default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               inset 0 1px 1px rgba($black,.075) !default;
 
@@ -477,8 +477,8 @@ $input-border-radius:            $border-radius !default;
 $input-border-radius-lg:         $border-radius-lg !default;
 $input-border-radius-sm:         $border-radius-sm !default;
 
-$input-bg-focus:                 $gray-lightest !default;
-$input-border-focus:             $gray-lightest !default;
+$input-bg-focus:                 transparent !default;
+$input-border-focus:             transparent !default;
 $input-box-shadow-focus:         $input-box-shadow, rgba($input-border-focus, .6) !default;
 $input-color-focus:              $input-color !default;
 
@@ -508,8 +508,8 @@ $form-check-inline-margin-x: .75rem !default;
 
 $form-group-margin-bottom:       $spacer-y !default;
 
-$input-group-addon-bg:           $gray-lightest !default;
-$input-group-addon-border-color: $gray-lightest !default;
+$input-group-addon-bg:           transparent !default;
+$input-group-addon-border-color: transparent !default;
 
 $cursor-disabled:                not-allowed !default;
 
@@ -1112,15 +1112,15 @@ font-family: 'POWER_PREON';
 }
 .alert{border:none !important;border-radius: 0px !important;}
 .badge{
-    width: 2rem;
-    height: 2rem;
-    border-radius:2rem !important;
-    padding:10px !important;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius:1.5rem !important;
+    padding:5px !important;
 }
 .badge-notify{
    position:relative;
    top: -15px;
-   left: -20px;
+   left: -15px;
 }
 .btn-primary.disabled, .btn-primary:disabled,.btn-secondary.disabled, .btn-secondary:disabled{
     background-color: $gray-light !important;
@@ -1163,23 +1163,41 @@ font-family: 'POWER_PREON';
 .bg-form{
   background-color: $gray-lightest;
   border-radius: 2rem !important;
-  padding:6px !important;
+  padding:6px 6px 6px 25px !important;
+  width: 30%;
 }
+.bg-form-grown{
+            width: 100% !important;
+            transition: 0.2s all;
+    }
+
+
 .form-control{
-  border-bottom:1px solid $gray-lighter !important;
-  color:$black !important;
-  margin-left: 15px !important;
-  padding:0px !important;
-}
-.input-group-addon i{
-  color:$red;
+    border-radius: 0px !important;
+    border-bottom:1px solid $gray-light;
+    color:$black !important;
+//  margin-left: 15px !important;
+    padding:0px !important;
 }
 .form-control:focus{
   border-bottom:1px solid $black !important;
 }
+
 .table-striped tbody tr:nth-of-type(odd){
   background-color:$gray-lightest !important;
 }
-thead{
+.form-group .no-border{
+        border:none !important;
+    }
+.only-input-dark{
+        border-bottom:1px solid $black !important;
 
+    }
+.only-input-dark .input-group-addon i{
+    color:$black
+}
+
+.only-input{
+    padding-top:0px;
+    border-bottom:1px solid $gray-light;
 }
