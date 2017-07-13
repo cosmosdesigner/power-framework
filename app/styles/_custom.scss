@@ -965,14 +965,14 @@ $breadcrumb-divider:            ">" !default;
 
 // Carousel
 
-$carousel-control-color:                      $white !default;
+$carousel-control-color:                      $red !default;
 $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
 
 $carousel-indicator-width:                    30px !default;
 $carousel-indicator-height:                   3px !default;
 $carousel-indicator-spacer:                   3px !default;
-$carousel-indicator-active-bg:                $white !default;
+$carousel-indicator-active-bg:                $red !default;
 
 $carousel-caption-width:                      70% !default;
 $carousel-caption-color:                      $white !default;
@@ -1139,4 +1139,24 @@ font-family: 'POWER_PREON';
     background-size: cover;
     color:$white;
     min-height: 150px;
+}
+
+.carousel-indicators {
+    margin-bottom:-40px !important;
+
+    .active{
+      background-color:$red !important;
+    }
+    li{
+      max-width: 0.5rem !important;
+      background-color:$gray-light !important;
+      width: 0.5rem !important;
+      height: 0.5rem !important;
+      border-radius:0.5rem !important;
+      margin:0px 10px 0px 10px !important;
+    }
+}
+
+.carousel-control-prev, .carousel-control-next{
+  width:100% !important;
 }
