@@ -230,7 +230,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $white !default;
+$body-bg:       $gray !default;
 $body-color:    $gray-dark !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
@@ -954,7 +954,7 @@ $figure-caption-color:     $gray-light !default;
 // Breadcrumbs
 
 $breadcrumb-padding-y:          0.5rem !default;
-$breadcrumb-padding-x:          0rem !default;
+$breadcrumb-padding-x:          0.5rem !default;
 $breadcrumb-item-padding:       1.5rem !default;
 
 $breadcrumb-bg:                 $white !default;
