@@ -385,12 +385,12 @@ $transition-collapse:    height .35s ease !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:            .75rem !default;
+$table-cell-padding:            1rem !default;
 $table-sm-cell-padding:         .3rem !default;
 
-$table-bg:                      transparent !default;
+$table-bg:                      $white !default;
 
-$table-inverse-bg:              $gray-dark !default;
+$table-inverse-bg:              #a7a7a7 !default;
 $table-inverse-color:           $body-bg !default;
 
 $table-bg-accent:               rgba($black,.05) !default;
@@ -1169,10 +1169,17 @@ font-family: 'POWER_PREON';
   border-bottom:1px solid $gray-lighter !important;
   color:$black !important;
   margin-left: 15px !important;
+  padding:0px !important;
 }
 .input-group-addon i{
   color:$red;
 }
 .form-control:focus{
   border-bottom:1px solid $black !important;
+}
+.table-striped tbody tr:nth-of-type(odd){
+  background-color:$gray-lightest !important;
+}
+thead{
+
 }
