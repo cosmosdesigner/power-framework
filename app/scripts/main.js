@@ -4,9 +4,13 @@ $(document).ready(function () {
     }
 
     $('.bg-form .input-group .form-control').on('focus', function () {
+        if($(this).val()===''){
         $(this).parent().parent().toggleClass('bg-form-grown');
+      }
     }).on('blur', function () {
+        if($(this).val()===''){
         $(this).parent().parent().toggleClass('bg-form-grown');
+      }
     });
 
     $('.input-group.only-input .form-control').on('focus', function () {
