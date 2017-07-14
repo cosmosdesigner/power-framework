@@ -23,4 +23,12 @@ $(document).ready(function () {
       }
     });
 
+    $('nav a').click(function(e){
+      var idMenu=e.target.hash;
+      $(idMenu).css('padding-top','12rem');
+      $('.container:not("'+idMenu+'")').css('padding-top','0rem');
+
+    });
+
+
 });
