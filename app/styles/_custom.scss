@@ -1164,12 +1164,14 @@ font-family: 'POWER_PREON';
   background-color: $gray-lightest;
   border-radius: 2rem !important;
   padding:6px 6px 6px 25px !important;
-  width: 30%;
+  min-width:40%;
+  width: 120px;
+  transition:0.2s width ;
 }
 .bg-form-grown{
-            width: 100% !important;
-            transition: 0.2s all;
-    }
+  width: 100% !important;
+  transition:  0.2s width;
+}
 
 
 .form-control{
@@ -1178,6 +1180,7 @@ font-family: 'POWER_PREON';
     color:$black !important;
 //  margin-left: 15px !important;
     padding:0px !important;
+    transition:  0.2s all;
 }
 .form-control:focus{
   border-bottom:1px solid $black !important;
@@ -1190,7 +1193,8 @@ font-family: 'POWER_PREON';
         border:none !important;
     }
 .only-input-dark{
-        border-bottom:1px solid $black !important;
+    border-bottom:1px solid $black !important;
+    transition:  0.2s border;
 
     }
 .only-input-dark .input-group-addon i{
@@ -1200,4 +1204,5 @@ font-family: 'POWER_PREON';
 .only-input{
     padding-top:0px;
     border-bottom:1px solid $gray-light;
+    transition:  0.2s border;
 }
