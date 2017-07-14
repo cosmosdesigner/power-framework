@@ -26,6 +26,9 @@
 </head>
 
 <body>
+  <div class="blur-content">
+
+
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -78,6 +81,8 @@
     </div> -->
 
 
+
+
     <div class="container" style="margin-top:6rem">
         <div class="row">
             <div class="col-12">
@@ -115,14 +120,6 @@
                 <h3 class="preon">PARAGRAPHS</h3>
                 <p class="preon">Bear claw pudding chocolate cake lemon drops <b>macaroon</b> carrot cake cake cookie icing. Marshmallow chocolate cake cake gummi bears. Sugar plum candy canes chocolate cake. Tiramisu chupa chups powder chupa chups pastry donut. Fruitcake muffin pastry fruitcake. Jujubes sugar plum chocolate gummies cake sugar plum sesame snaps cheesecake. Lemon drops carrot cake candy canes ice cream halvah ice cream. Cake powder toffee chocolate bar donut biscuit soufflé cookie cheesecake. Jelly-o toffee wafer biscuit bear claw biscuit. Marzipan chocolate pudding dragée topping cookie macaroon carrot cake. Cookie chocolate bar lemon drops cake caramels. Chocolate cake candy canes lemon drops marzipan danish. Sesame snaps pie pie cookie jelly-o tart.</p>
             </div>
-            <!-- <div class="col-12 pt-4">
-      <h3>DISPLAYS</h3>
-      <h1 class="display-1"><code>.display-1</code>Bear claw pudding chocolate cake lemon drops macaroon carrot cake cake cookie icing. </h1>
-      <h1 class="display-2"><code>.display-2</code>Bear claw pudding chocolate cake lemon drops macaroon carrot cake cake cookie icing. </h1>
-      <h1 class="display-3"><code>.display-3</code>Bear claw pudding chocolate cake lemon drops macaroon carrot cake cake cookie icing. </h1>
-      <h1 class="display-4"><code>.display-4</code>Bear claw pudding chocolate cake lemon drops macaroon carrot cake cake cookie icing. </h1>
-  </div> -->
-
         </div>
     </div>
 
@@ -571,12 +568,31 @@
             <div class="form-group">
                <label><b>Nome Completo</b></label>
                 <div class="input-group only-input" >
-                   <div class="input-group-addon"><i class="fa fa-envelope-o txt-lightgray"></i></div>
+                   <div class="input-group-addon"><i class="fa fa-user txt-lightgray"></i></div>
                     <input class="form-control" type="text" placeholder="Nome completo">
                 </div>
             </div>
             </div>
+            <div class="col-4">
+             <div class="form-group">
+                <label><b>Email</b></label>
+                 <div class="input-group only-input" >
+                     <input class="form-control" type="text" placeholder="Email">
+                     <div class="input-group-addon"><i class="fa fa-envelope-o txt-lightgray"></i></div>
+                 </div>
+             </div>
+             </div>
         </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>MODAL</h2>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">.btn-primary</button>
+        </div>
+      </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -614,6 +630,27 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title preon" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close txt-red"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
